@@ -4,7 +4,12 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
 }
-
+body {
+    background-color: var(--GRAY-900);
+}
+html {
+    font-size: 62.5%;
+}
 img {
     max-width: 100%;
     display: block;
