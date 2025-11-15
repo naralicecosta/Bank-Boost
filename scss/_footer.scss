@@ -1,0 +1,118 @@
+footer {
+    position: relative;
+    background-color: #35189c;
+    padding: 40px 0;
+    &:after {
+        content: "";
+        width: 100%;
+        max-width: 1216px;
+        height: 4px;
+        background-color: #e9c300;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -608px;
+    }
+    .area-social {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        .social-media {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        span {
+            color: #fff;
+            font-size: 14px;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+    }
+    .main-area {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-bottom: 56px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 24px;
+
+        .left {
+            flex: 1;
+            display: flex;
+            max-width: 84.1rem;
+            align-self: flex-start;
+            justify-content: space-between;
+            .item {
+                h5 {
+                    margin-bottom: 32px;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                ul {
+                    li {
+                        &:not(:last-child) {
+                            margin-bottom: 32px;
+                        }
+                        a {
+                            color: #fff;
+                            font-size: 14px;
+                            opacity: 0.67;
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            flex: 1;
+            max-width: 29.9rem;
+            a {
+                display: flex;
+                align-items: center;
+                border-radius: 6px;
+                background: rgba(255, 255, 255, 0.04);
+                padding: 2.6rem 1.5rem 2.6rem 2.4rem;
+                gap: 16px;
+                &:not(:last-child) {
+                    margin-bottom: 24px;
+                }
+                .description {
+                    strong {
+                        color: #fff;
+                        font-size: 14px;
+                        font-family: "Inter", sans-serif;
+                        font-weight: 600;
+                        line-height: 150%;
+                    }
+                    p {
+                        color: #fff;
+                        font-size: 14px;
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+    .copy {
+        .text {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            p {
+                flex: 1;
+                max-width: 66rem;
+                color: #fff;
+                font-family: "Inter", sans-serif;
+                font-size: 14px;
+            }
+        }
+    }
+}
