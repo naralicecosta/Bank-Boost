@@ -39,7 +39,11 @@ header {
             text-align: center;
             font-size: 16px;
             font-weight: 600;
-            z-index: 999;
+            transition: all 0.3s ease;
+            &:hover {
+                background-color: #fff;
+                color: var(--PURPLE-10);
+            }
         }
     }
     .btn-mobile {

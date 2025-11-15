@@ -38,6 +38,10 @@
             font-size: 16px;
             font-weight: 600;
             margin-bottom: 64px;
+            transition: filter 0.3s ease;
+            &:hover {
+                filter: brightness(0.9);
+            }
         }
         ul {
             display: flex;
@@ -267,6 +271,14 @@
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
+                li {
+                    a {
+                        transition: opacity 0.3s ease;
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+                }
             }
         }
     }
@@ -327,6 +339,11 @@
             font-weight: 500;
             line-height: 112%;
             letter-spacing: -0.5px;
+            transition: opacity 0.3s ease;
+            &:hover {
+                opacity: 0.8;
+            }
+
             &:after {
                 content: "";
                 height: 3px;
@@ -385,6 +402,10 @@
                             font-size: 16px;
                             font-weight: 700;
                             width: 132px;
+                            transition: filter 0.3s ease;
+                            &:hover {
+                                filter: brightness(0.9);
+                            }
                         }
                     }
                 }
@@ -738,6 +759,10 @@
             font-size: 16px;
             font-weight: 600;
             margin-bottom: 64px;
+            transition: filter 0.3s ease;
+            &:hover {
+                filter: brightness(0.8);
+            }
         }
     }
 

@@ -34,6 +34,14 @@ footer {
             display: flex;
             align-items: center;
             gap: 32px;
+            li {
+                a {
+                    transition: opacity 0.3s ease;
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
         }
     }
     .main-area {
@@ -66,6 +74,10 @@ footer {
                             color: #fff;
                             font-size: 14px;
                             opacity: 0.67;
+                            transition: opacity 0.3s ease;
+                            &:hover {
+                                opacity: 1;
+                            }
                         }
                     }
                 }
@@ -78,9 +90,13 @@ footer {
                 display: flex;
                 align-items: center;
                 border-radius: 6px;
-                background: rgba(255, 255, 255, 0.04);
+                background-color: rgba(255, 255, 255, 0.04);
                 padding: 2.6rem 1.5rem 2.6rem 2.4rem;
                 gap: 16px;
+                transition: background-color 0.3s ease;
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
                 &:not(:last-child) {
                     margin-bottom: 24px;
                 }
